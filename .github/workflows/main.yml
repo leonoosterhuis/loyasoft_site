@@ -56,7 +56,13 @@ jobs:
         run: npm install -g --save-dev nx
 
       - name: Build for production
-        run: npm run build
+        run: nx run LS-Site:build:production
+
+      - name: Prepare files for deployment logging
+        run: ls
+
+      - name: Prepare files for deployment
+        run: mv dist/apps/ls-site/* public/
 
       - name: Commit and Push Changes
         run: |

@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "nx serve",
-    "build": "nx run LS-Site:build:production && mv dist/apps/ls-site/* public/",
+    "build": "nx run LS-Site:build:production",
     "watch": "nx build --watch --configuration development && mv dist/apps/ls-site/* public/",
     "test": "nx test"
   },
