@@ -30,9 +30,9 @@ jobs:
         run: npm ci --ignore-scripts
 
 
-      #      - name: Install Semantic dependencies
-      #        run: |
-      #          npm -g --save-dev install @semantic-release/git semantic-release @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/git @semantic-release/exec
+      - name: Install Semantic dependencies
+        run: |
+          npm -g --save-dev install @semantic-release/git semantic-release @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/git @semantic-release/exec
 
       - name: Run Semantic Release -d
         run: |
