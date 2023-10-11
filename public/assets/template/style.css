@@ -431,7 +431,7 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 73vh;
+  height: 43em;
   background: linear-gradient(135deg, #e91e63a6, #ff9800bf);
   margin-bottom: -70px;
 }
@@ -521,8 +521,8 @@ h6 {
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 4em;
+    line-height: 1em;
   }
 
   #hero h2 {
@@ -1917,7 +1917,7 @@ section {
 
 #page-head {
   width: 100%;
-  height: 43vh;
+  height: 27em;
   background: linear-gradient(135deg, #e91e63a6, #ff9800bf);
   margin-bottom: -70px;
 }
@@ -1934,4 +1934,90 @@ section {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 50px;
   font-size: 24px;
+}
+
+@media (max-width: 280px) {
+
+  .type-hosting-icons {
+    font-size: 0.7em !important;
+  }
+
+  #page-head .features {
+    margin-top: -9% !important;
+  }
+
+  #page-head h1 {
+    font-size: 1em
+  }
+}
+
+@media (min-width: 280px) and (max-width: 320px) {
+
+  .type-hosting-icons {
+    font-size: 0.7em !important;
+  }
+
+  #page-head .features {
+    margin-top: -9% !important;
+  }
+
+  #page-head h1 {
+    font-size: 1em
+  }
+}
+
+@media (min-width: 320px) and (max-width: 414px) {
+  .type-hosting-icons {
+    font-size: 0.7em !important;
+  }
+
+  #page-head .features {
+    margin-top: -9% !important;
+  }
+
+  #page-head h1 {
+    font-size: 1.7em
+  }
+}
+
+@media (min-width: 414px) and (max-width: 768px) {
+  .type-hosting-icons {
+    font-size: 0.7em !important;
+  }
+
+  #page-head .features {
+    margin-top: -9% !important;
+  }
+
+  #page-head h1 {
+    font-size: 1.6em
+  }
+}
+
+@media (min-width: 768px) and (max-width: 988px) {
+  .type-hosting-icons {
+    font-size: 0.9em !important;
+  }
+
+  #page-head .features {
+    margin-top: -5% !important;
+  }
+
+  #page-head h1 {
+    font-size: 2.3em
+  }
+}
+
+@media (min-width: 988px) and (max-width: 1399px) {
+  .type-hosting-icons {
+    font-size: 0.8em !important;
+  }
+
+  #page-head .features {
+    margin-top: 3% !important;
+  }
+
+  #page-head h1 {
+    font-size: 3em
+  }
 }
