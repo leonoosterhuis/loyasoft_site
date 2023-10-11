@@ -52,10 +52,6 @@ jobs:
           sed -E "s/appVersion: '[0-9]+\.[0-9]+\.[0-9]+'/appVersion: '$RELEASE_VERSION'/" apps/LS-Site/src/environments/version.ts > tmp_environments.ts
           mv tmp_environments.ts apps/LS-Site/src/environments/version.ts
 
-      - name: Log environments.ts content
-        run: |
-          cat apps/LS-Site/src/environments/environments.ts
-
       - name: Install Angular CLI
         run: npm install -g --save-dev nx
 

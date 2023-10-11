@@ -1,5 +1,5 @@
 export const app = {
-  appVersion: ''
+  appVersion: '0.0.0',
 };
 
 
