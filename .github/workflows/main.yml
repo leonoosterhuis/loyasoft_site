@@ -49,7 +49,7 @@ jobs:
           cat apps/LS-Site/src/environments/environments.ts
 
       - name: Install Angular CLI
-        run: npm install -g --save-dev @angular/cli
+        run: npm install -g --save-dev nx
 
       - name: Build for production
         run: nx run LS-Site:build:production
