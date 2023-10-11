@@ -19,6 +19,8 @@
         "assets": [
           "apps/LS-Site/src/favicon.ico",
           "apps/LS-Site/src/robots.txt",
+          "apps/LS-Site/src/.htaccess",
+          "apps/LS-Site/src/sitemap.xml",
           "apps/LS-Site/src/assets"
         ],
         "styles": [
