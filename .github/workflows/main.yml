@@ -65,7 +65,9 @@ jobs:
           ls dist/apps
 
       - name: Prepare files for deployment
-        run: mv dist/apps/LS-Site/* public/
+        run: |
+          rm -rf public/*
+          mv dist/apps/LS-Site/* public/
 
       - name: Commit and Push Changes
         run: |
