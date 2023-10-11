@@ -17,6 +17,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 20
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm install
@@ -27,7 +28,7 @@ jobs:
           npm -g --save-dev install @semantic-release/release-notes-generator
           npm i -g --save-dev @semantic-release/commit-analyzer
           npm i -g --save-dev @semantic-release/git
-          npm i -g --save-dev @semantic-release/exec  
+          npm i -g --save-dev @semantic-release/exec
 
       - name: Run Semantic Release -d
         run: |
