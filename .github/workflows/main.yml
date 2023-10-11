@@ -59,10 +59,10 @@ jobs:
         run: nx run LS-Site:build:production
 
       - name: Prepare files for deployment logging
-        run: ls
+        run: ls dist/apps
 
       - name: Prepare files for deployment
-        run: mv dist/apps/ls-site/* public/
+        run: mv dist/apps/LS-Site/* public/
 
       - name: Commit and Push Changes
         run: |
