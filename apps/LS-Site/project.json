@@ -18,7 +18,8 @@
         "tsConfig": "apps/LS-Site/tsconfig.app.json",
         "assets": [
           "apps/LS-Site/src/favicon.ico",
-          "apps/LS-Site/src/assets"
+          "apps/LS-Site/src/assets",
+          "apps/LS-Site/src/assets/robots.txt"
         ],
         "styles": [
           "apps/LS-Site/src/styles.css",
