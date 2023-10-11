@@ -19,16 +19,12 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - name: Install dependencies
-        run: npm install
+      - name: Restore npm cache
+        run: npm ci
 
       - name: Install Semantic dependencies
         run: |
-          npm -g --save-dev install @semantic-release/git semantic-release
-          npm -g --save-dev install @semantic-release/release-notes-generator
-          npm i -g --save-dev @semantic-release/commit-analyzer
-          npm i -g --save-dev @semantic-release/git
-          npm i -g --save-dev @semantic-release/exec
+          npm -g --save-dev install @semantic-release/git semantic-release @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/git @semantic-release/exec
 
       - name: Run Semantic Release -d
         run: |
@@ -48,11 +44,9 @@ jobs:
           sed -E "s/appVersion: '[0-9]+\.[0-9]+\.[0-9]+'/appVersion: '$RELEASE_VERSION'/" apps/LS-Site/src/environments/version.ts > tmp_environments.ts
           mv tmp_environments.ts apps/LS-Site/src/environments/version.ts
 
-
       - name: Log environments.ts content
         run: |
           cat apps/LS-Site/src/environments/environments.ts
-
 
       - name: Install Angular CLI
         run: npm install -g --save-dev @angular/cli
