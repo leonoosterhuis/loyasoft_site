@@ -1,0 +1,97 @@
+<section class="d-flex align-items-center" id="page-head">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <h1 *ngIf="!_loading" style="font-size: 4em">{{_subject}}<span style="color: #f2503d">.</span></h1>
+        <h3>{{_subject_2}}</h3>
+        <div *ngIf="_loading">
+          <svg height="40px" id="loader-1" style="enable-background:new 0 0 50 50;"
+               version="1.1" viewBox="0 0 50 50" width="40px" x="0px" xml:space="preserve"
+               xmlns="http://www.w3.org/2000/svg" y="0px">
+                              <path
+                                d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z"
+                                fill="#000">
+                                <animateTransform attributeName="transform" attributeType="xml" dur="0.6s"
+                                                  from="0 25 25" repeatCount="indefinite" to="360 25 25"
+                                                  type="rotate"></animateTransform>
+                                </path>
+                                </svg>
+        </div>
+
+      </div>
+
+      <div
+        class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1 features"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<main id="main">
+  <section class="about" id="about">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="py-3 service-1">
+          <div class="top-icons-hosting">
+            <div class="container">
+
+
+              <!-- Row  -->
+              <div class="row">
+                <!-- Column -->
+                <div class="col-12 wrap-service1-box">
+                  <div class="card border-0 card-shadow mb-4">
+                    <div class="card-body">
+                      <div class="row">
+                        <div
+                          class="col-12 pt-4 pt-lg-0"
+                          data-aos="fade-left"
+                          data-aos-delay="100"
+                        >
+                          <div class="container" data-aos="fade-up">
+                            <!--                    <div class="section-title">-->
+                            <!--                      <h2>Wat is hosting</h2>-->
+                            <!--                    </div>-->
+                            <div [innerHTML]="_content"></div>
+
+                            <div *ngIf="_loading">
+                              <svg height="40px" id="loader-1" style="enable-background:new 0 0 50 50;"
+                                   version="1.1" viewBox="0 0 50 50" width="40px" x="0px" xml:space="preserve"
+                                   xmlns="http://www.w3.org/2000/svg" y="0px">
+                              <path
+                                d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z"
+                                fill="#000">
+                                <animateTransform attributeName="transform" attributeType="xml" dur="0.6s"
+                                                  from="0 25 25" repeatCount="indefinite" to="360 25 25"
+                                                  type="rotate"></animateTransform>
+                                </path>
+                                </svg>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+

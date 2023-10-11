@@ -1,0 +1,105 @@
+{
+  "name": "LS-Site",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "generators": {},
+  "sourceRoot": "apps/LS-Site/src",
+  "prefix": "app",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "options": {
+        "outputPath": "dist/apps/LS-Site",
+        "index": "apps/LS-Site/src/index.html",
+        "main": "apps/LS-Site/src/main.ts",
+        "polyfills": [
+          "zone.js"
+        ],
+        "tsConfig": "apps/LS-Site/tsconfig.app.json",
+        "assets": [
+          "apps/LS-Site/src/favicon.ico",
+          "apps/LS-Site/src/assets"
+        ],
+        "styles": [
+          "apps/LS-Site/src/styles.css",
+          "apps/LS-Site/src/fonts.css",
+          "node_modules/bootstrap/dist/css/bootstrap.min.css",
+          "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+        ],
+        "scripts": [
+          "apps/LS-Site/src/assets/template/aos/aos.js",
+          "apps/LS-Site/src/assets/template/bootstrap/js/bootstrap.bundle.min.js",
+          "apps/LS-Site/src/assets/template/glightbox/js/glightbox.min.js",
+          "apps/LS-Site/src/assets/template/isotope-layout/isotope.pkgd.min.js",
+          "apps/LS-Site/src/assets/template/swiper/swiper-bundle.min.js",
+          "apps/LS-Site/src/assets/template/waypoints/noframework.waypoints.js",
+          "apps/LS-Site/src/assets/template/waypoints/noframework.waypoints.js",
+          "apps/LS-Site/src/assets/template/php-email-form/validate.js",
+          "apps/LS-Site/src/assets/js/core/main_template.js"
+        ]
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "1200kb",
+              "maximumError": "2mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "LS-Site:build:production"
+        },
+        "development": {
+          "browserTarget": "LS-Site:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "LS-Site:build"
+      }
+    },
+    "test": {
+      "executor": "@angular-devkit/build-angular:karma",
+      "options": {
+        "polyfills": [
+          "zone.js",
+          "zone.js/testing"
+        ],
+        "tsConfig": "apps/LS-Site/tsconfig.spec.json",
+        "assets": [
+          "apps/LS-Site/src/favicon.ico",
+          "apps/LS-Site/src/assets"
+        ],
+        "styles": [
+          "apps/LS-Site/src/styles.css"
+        ],
+        "scripts": []
+      }
+    }
+  }
+}

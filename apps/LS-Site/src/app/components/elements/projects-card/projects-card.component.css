@@ -1,0 +1,32 @@
+/* styles.css */
+
+.imac {
+  background-image: url('/assets/images/template/portfolio/imac-screen.webp');
+  background-size: cover;
+  width: 25em;
+  height: 21em;
+  position: relative;
+}
+
+.website-image {
+  position: absolute;
+  top: 15px;
+  left: 14px;
+  width: 23.5em;
+  height: 13.2em;
+}
+
+
+.column {
+  float: left;
+  /*width: 33.33%;*/
+  visibility: hidden;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  visibility: visible;
+}
+
+
+

@@ -1,0 +1,104 @@
+<section class="d-flex align-items-center" id="page-head">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <h1 style="font-size: 4em">Contact<span style="color: #f2503d">.</span></h1>
+      </div>
+
+      <div
+        class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1 features"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div class="type-hosting-icons pt-2">
+          <p>
+            <i class="fa-solid fa-check"></i> Voor een mooie opdracht
+          </p>
+          <p>
+            <i class="fa-solid fa-check"></i> Voor alle vragen
+          </p>
+          <p>
+            <i class="fa-solid fa-check"></i> Voor het maken van een afspraak
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<main id="main">
+
+  <section class="contact" id="contact" style="padding-top: 5em">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+
+      <div class="row">
+
+        <div class="col-lg-5 d-flex align-items-stretch">
+          <div class="info">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Locatie:</h4>
+              <p>Kurt Schwittersstraat 20, Drachten</p>
+            </div>
+
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>info@loyasoft.nl</p>
+            </div>
+
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Telefoon:</h4>
+              <p>+31 6 37407635</p>
+            </div>
+
+            <!--                          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>-->
+          </div>
+
+        </div>
+
+        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+
+          <form (submit)="onSubmit()" class="php-email-form" role="form">
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="name">Naam</label>
+                <input [(ngModel)]="formData.name" class="form-control" id="name" name="name" required type="text">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="email">Email</label>
+                <input [(ngModel)]="formData.email" class="form-control" id="email" name="email" required type="email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Onderwerp</label>
+              <input [(ngModel)]="formData.subject" class="form-control" id="subject" name="subject" required
+                     type="text">
+            </div>
+            <div class="form-group">
+              <label for="message">Bericht</label>
+              <textarea [(ngModel)]="formData.message" class="form-control" id="message" name="message" required
+                        rows="10"></textarea>
+            </div>
+            <div class="my-3">
+              <div [style.display]="isSent ? 'block' : 'none'" class="sent-message">
+                {{statusMessage}}
+              </div>
+            </div>
+            <div class="text-center">
+              <button [disabled]="isSubmitting" type="submit">Verstuur bericht</button>
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+</main>

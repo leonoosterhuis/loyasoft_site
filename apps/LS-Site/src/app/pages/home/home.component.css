@@ -1,0 +1,57 @@
+.content {
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+/*.row {*/
+/*  margin: 10px -16px;*/
+/*}*/
+
+/*!* Add padding BETWEEN each column *!*/
+/*.row,*/
+/*.row > .column {*/
+/*  padding: 8px;*/
+/*}*/
+
+.column {
+  float: left;
+  /*width: 33.33%;*/
+  display: none;
+  visibility: hidden;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  visibility: visible;
+  display: unset;
+}
+
+.filter-btns {
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px 5px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  color: #444444;
+  transition: all 0.3s;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+}

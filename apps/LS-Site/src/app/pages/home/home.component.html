@@ -1,0 +1,235 @@
+<section class="d-flex align-items-center" id="hero">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1">
+        <!--        data-aos="fade-up"-->
+        <!--        data-aos-delay="200"-->
+
+        <h1 style="font-size: 4em">Loyasoft</h1>
+        <h2>Website | Hosting | Applicaties</h2>
+        <div class="d-flex justify-content-center justify-content-lg-start">
+          <a aria-label="Neem contact op" class="btn-get-started scrollto" routerLink="/contact">Contact</a>
+        </div>
+      </div>
+      <div
+        class="col-lg-6 order-1 order-lg-2 hero-img">
+        <!--        data-aos="zoom-in"-->
+        <!--        data-aos-delay="200"-->
+        <img
+          alt=""
+          class="img-fluid animated"
+          height="527"
+          src="assets/images/template/hero-img.webp"
+          width="636"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Hero -->
+
+<main id="main">
+  <!-- ======= Services Section ======= -->
+  <section id="ls_services">
+    <div class="container" data-aos="fade-up">
+      <app-services-card></app-services-card>
+    </div>
+  </section>
+  <!-- End Services Section -->
+
+  <!-- ======= Projects Section ======= -->
+  <section class="portfolio section-bg" id="portfolio">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Projects</h2>
+      </div>
+
+      <ul
+        class="d-flex justify-content-center"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        id="portfolio-flters"
+      >
+        <li (click)="filterSelection('all')" class="filter" id="filter-all">Alles</li>
+        <li (click)="filterSelection('websites')" class="filter" id="filter-websites">Websites</li>
+        <li (click)="filterSelection('applications')" class="filter" id="filter-applications">Applicaties</li>
+        <li (click)="filterSelection('hosting')" class="filter" id="filter-hosting">Hosting</li>
+      </ul>
+
+      <div class="portfolio-container">
+
+
+        <app-projects-card class="column websites portfolio-item"
+                           description="Paardensport Friesland"
+                           imgSrc="assets/images/template/portfolio/screen-psf.webp"
+                           projectType="websites"
+                           websiteURL="https://paardensportfriesland.nl/"
+        ></app-projects-card>
+        <app-projects-card
+          class="column websites portfolio-item"
+          description="Camping Koningsdiep"
+          imgSrc="assets/images/template/portfolio/screen-cmpkod.webp"
+          projectType="websites"
+          websiteURL="https://camping-koningsdiep.nl/"
+        ></app-projects-card>
+        <app-projects-card
+          class="column websites portfolio-item"
+          description="Genieterij Aldeboarn"
+          imgSrc="assets/images/template/portfolio/screen-gen-ald.webp"
+          projectType="websites"
+          websiteURL="https://genieterij-aldeboarn.nl/"
+        ></app-projects-card>
+        <app-projects-card
+          class="column applications portfolio-item"
+          description="Invoices - Boekhoudsysteem"
+          imgSrc="assets/images/template/portfolio/invoices.webp"
+          projectType="applications"
+          websiteURL="https://loyasoft.nl/projects/invoices"
+        ></app-projects-card>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+
+  <!-- ======= Skills Section ======= -->
+  <section class="skills" id="skills">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div
+          class="col-lg-6 d-flex align-items-center"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
+          <img
+            alt=""
+            class="img-fluid"
+            height="391"
+            src="assets/images/template/skills.webp"
+            width="636"
+          />
+        </div>
+        <div
+          class="col-lg-6 pt-4 pt-lg-0 content"
+          data-aos="fade-left"
+          data-aos-delay="100"
+        >
+          <div class="container" data-aos="fade-up">
+            <div class="section-title">
+              <h2>Over Loyasoft</h2>
+            </div>
+
+            <p class="content">
+              Bij Loyasoft draait alles om het creëren van digitale impact. Met
+              ervaring op het gebied van softwareontwikkeling, webdesign en
+              hosting, ben ik vastberaden om op maat gemaakte oplossingen te
+              leveren die naadloos aansluiten op jouw behoeften en visie.
+            </p>
+
+            <p class="content">
+              We onarmen sterke samenwerking, open communicatie en voortdurende
+              verbetering. Laten we samen jouw digitale mogelijkheden verkennen
+              en realiseren, of het nu gaat om het bouwen van op maat gemaakte
+              software, het ontwerpen van boeiende websites of het bieden van
+              betrouwbare hostingoplossingen. We zetten de technologie van
+              vandaag in om jouw wensen te realiseren.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Skills Section -->
+
+  <!-- ======= Services Section ======= -->
+  <section class="services section-bg" id="services">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Hoe kunnen we jou helpen?</h2>
+        <p>
+          Als u contact wilt opnemen of meer informatie wilt verkrijgen, kunt u
+          een van de onderstaande diensten selecteren of het kenniscentrum bezoeken.
+        </p>
+      </div>
+
+      <div class="row">
+        <div
+          class="col-xl-3 col-md-6 d-flex align-items-stretch"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          <div class="icon-box">
+            <div class="icon">
+              <i class="fa-solid fa-desktop serviceIcon pb-4"></i>
+            </div>
+            <h4><a aria-label="Bezoek websites" class="text-decoration-none" href="">Websites</a></h4>
+          </div>
+        </div>
+
+        <div
+          class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          <div class="icon-box">
+            <div class="icon">
+              <i class="fa-solid fa-server serviceIcon pb-4"></i>
+            </div>
+            <h4><a aria-label="Bezoek hosting" class="text-decoration-none" href="">Hosting</a></h4>
+          </div>
+        </div>
+
+        <div
+          class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
+          <div class="icon-box">
+            <div class="icon">
+              <i class="fa-solid fa-code serviceIcon pb-4"></i>
+            </div>
+            <h4><a aria-label="Bezoek applicaties" class="text-decoration-none" href="">Applicaties</a></h4>
+          </div>
+        </div>
+
+        <div
+          class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+          data-aos="zoom-in"
+          data-aos-delay="400"
+        >
+          <div class="icon-box">
+            <div class="icon">
+              <i class="fa-solid fa-lightbulb serviceIcon pb-4"></i>
+            </div>
+            <h4><a aria-label="Bezoek kenniscentrum" class="text-decoration-none" href="">Kenniscentrum</a></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Services Section -->
+
+  <!-- ======= Cta Section ======= -->
+  <section class="cta" id="cta">
+    <div class="container" data-aos="zoom-in">
+      <div class="row">
+        <div class="col-lg-9 text-center text-lg-start">
+          <h3>Andere diensten?</h3>
+          <p>
+            Heeft u interesse in een andere dienst dan degene die hierboven
+            genoemd zijn, zoals migratie, installatie, aanpassingen aan uw
+            website, of advies op maat? Dat is ook mogelijk. Neem gerust contact
+            met ons op en bespreek de mogelijkheden.
+          </p>
+        </div>
+        <div class="col-lg-3 cta-btn-container text-center">
+          <a aria-label="Neem contact op" class="cta-btn align-middle" routerLink="/contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Cta Section -->
+</main>
+<!-- End #main -->
